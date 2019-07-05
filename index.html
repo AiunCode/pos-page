@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>POS PAGE</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/main.css">
+    <script src="src/main.js"></script>
+    <script src="src/cart.js"></script>
+    <script src="src/fixtures.js"></script>
+</head>
+
+<body>
+    <div class="page-container">
+        <header class="header">
+            <img src="imgs/cart.png" alt="">
+            <h2>商店收银系统</h2>
+        </header>
+        <div class="main">
+            <table class="order-table">
+                <thead>
+                    <tr>
+                        <th>商品</th>
+                        <th>描述</th>
+                        <th>数量</th>
+                        <th>单价</th>
+                        <th>小计</th>
+                    </tr>
+                </thead>
+                <tbody class="order-table-tbody">
+                </tbody>
+            </table>
+            <div class="discount-product-list">
+                <div class="description">赠送商品：</div>
+                <ul class="discount-product">
+                </ul>
+            </div>
+            <div class="summary">
+                <div class="total-price-container">
+                    <span>总计：</span>
+                    <span class="total-price"></span>
+                </div>
+                <div class="discount-price-container">
+                    <span>节省：</span>
+                    <span class="discount-price"></span>
+                </div>
+            </div>
+
+            <div class="text-input">
+                <div class="title">请输入商品条形码</div>
+                <textarea rows="16" id="user-input"></textarea>
+                <button class="confirm">确定</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

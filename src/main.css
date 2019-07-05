@@ -1,0 +1,174 @@
+/* reset */
+
+html body {
+    color: #222;
+    padding: 0;
+    margin: 0;
+    font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+/* header */
+
+.header {
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: calc(12%);
+    padding-right: 12%;
+    background: rgba(45, 45, 45, 0.98);
+    color: white;
+    letter-spacing: 4px;
+}
+
+header img {
+    width: 25px;
+    padding-right: 20px;
+}
+
+/* main */
+
+.main {
+    padding-right: 12%;
+    padding-left: calc(12% + 100px);
+    padding-top: 40px;
+    position: relative;
+    background: #fafafa;
+    min-height: calc(100% - 60px)
+}
+
+.main table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
+
+tbody tr:first-child {
+    border-top: 1px solid #d3d3d3;
+}
+
+tr, td {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+td img {
+    width: 80px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+tr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.order-table thead th {
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: .3px;
+}
+
+.order-table tbody td {
+    font-size: 13px;
+    font-weight: 400;
+    width: 15%;
+    padding: 13px 13px 13px 0;
+    letter-spacing: .2px;
+    vertical-align: middle;
+}
+
+/* summary */
+
+.discount-product-list {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 13px;
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.discount-product-list .description {
+    color: #666;
+    padding-bottom: 6px;
+}
+
+.discount-product-list .name {
+    color: #666;
+    padding-right: 5px;
+}
+
+.discount-product-item {
+    display: flex;
+}
+
+.discount-product-item .item+.item {
+    padding-left: 20px;
+}
+
+.total-price-container {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.discount-price-container {
+    font-size: 12px;
+    color: #777;
+}
+
+/* text-input */
+
+.text-input {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    width: calc(12%);
+    display: flex;
+    flex-direction: column;
+}
+
+.text-input .title {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding-bottom: 20px;
+}
+
+.text-input .confirm {
+    align-self: center;
+    background: #222;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
